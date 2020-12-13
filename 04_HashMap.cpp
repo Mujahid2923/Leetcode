@@ -162,7 +162,7 @@ int maxLen(int v[], int n)
     for( int i = 1 ; i <= n ; i ++ )
     {
         sum += v[ i - 1 ] ;
-        if( Mp[ sum ] == 0 && sum ) Mp[ sum ] = i ;
+        if( sum && !Mp[ sum ] ) Mp[ sum ] = i ;
         else val = max( val, i - Mp[ sum ] ) ;
     }
     return val ;
