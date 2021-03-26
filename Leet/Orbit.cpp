@@ -32,7 +32,8 @@ int findPlatform(int arr[], int dep[], int n)
 	}
 	return ans ;
 }
-2)
+
+2) Circuit
 #include<bits/stdc++.h>
 using namespace std;
 
