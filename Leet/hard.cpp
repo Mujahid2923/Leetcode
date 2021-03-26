@@ -1,4 +1,4 @@
-1) Given two array.find median of the two sorted arrays. [1, 3][2] = [1, 2, 3] ans = 2, again[1, 2], [3, 4] = 2.5
+/// 1) Given two array.find median of the two sorted arrays. [1, 3][2] = [1, 2, 3] ans = 2, again[1, 2], [3, 4] = 2.5
 
 class Solution {
   double Fun(vector < int > v1, vector < int > v2) {
@@ -32,7 +32,7 @@ class Solution {
     }
 };
 
-2) input string(s) and a pattern(p). '.' Matches any single character.​​​​ '*' Matches zero or more of the preceding element "aab", p = "c*a*b" => true c can be repeated 0 times, a can be repeated 1 time.Therefore, it matches "aab".
+/// 2) input string(s) and a pattern(p). '.' Matches any single character.​​​​ '*' Matches zero or more of the preceding element "aab", p = "c*a*b" => true c can be repeated 0 times, a can be repeated 1 time.Therefore, it matches "aab".
 class Solution {
   public:
     bool isMatch(string text, string pattern) {
@@ -57,7 +57,7 @@ class Solution {
     }
 };
 
-3) Longest Valid Parentheses.Input: s = ")()())" Output: 4, The longest valid parentheses substring is "()()".
+/// 3) Longest Valid Parentheses.Input: s = ")()())" Output: 4, The longest valid parentheses substring is "()()".
 class Solution {
   public:
     int longestValidParentheses(string s) {
@@ -78,7 +78,7 @@ class Solution {
       return ans;
     }
 };
-4)Sudoku lover
+/// 4) Sudoku lover
 class Solution {
 
   bool valid(vector < vector < char >> & vec, int row, int col, char num) {
@@ -114,7 +114,7 @@ class Solution {
     }
 };
 
-5) First Missing Positive from an unsorted array. [3, 4, -1, 1] = 2
+/// 5) First Missing Positive from an unsorted array. [3, 4, -1, 1] = 2
 class Solution {
   public:
     int firstMissingPositive(vector < int > & v) {
@@ -139,7 +139,7 @@ class Solution {
       return n + 1;
     }
 };
-6) Trapping Rain Water, height of the piller = [0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1] Output: 6
+/// 6) Trapping Rain Water, height of the piller = [0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1] Output: 6
 class Solution {
   public:
     int trap(vector < int > & v1) {
@@ -160,7 +160,7 @@ class Solution {
     }
 };
 
-7) Permutation Sequence.Given n and k,return the kth permutation sequence.
+/// 7) Permutation Sequence.Given n and k,return the kth permutation sequence.
 class Solution {
   public:
     string getPermutation(int n, int k) {
@@ -175,7 +175,8 @@ class Solution {
       return s;
     }
 };
-8) Minimum Window Substring.minimum window in s which will contain all the characters in t. Input: s = "ADOBECODEBANC", t = "ABC" Output: "BANC"
+
+/// 8) Minimum Window Substring.minimum window in s which will contain all the characters in t. Input: s = "ADOBECODEBANC", t = "ABC" Output: "BANC"
 class Solution {
   public:
     string minWindow(string s, string t) {
@@ -194,7 +195,7 @@ class Solution {
     }
 };
 
-9) largest rectangle containing only 1 's and return its area.[["1","0","1","0","0"],["1","0","1","1","1"],["1","1","1","1","1"],["1","0","0","1","0"]] = 6
+/// 9) largest rectangle containing only 1 's and return its area.[["1","0","1","0","0"],["1","0","1","1","1"],["1","1","1","1","1"],["1","0","0","1","0"]] = 6
 class Solution {
 
   int Fun(vector < int > & v) {
@@ -251,8 +252,8 @@ class Solution {
     }
 };
 
-10) Word Ladder.beginWord = "hit", endWord = "cog", wordList = ["hot", "dot", "dog", "lot", "log", "cog"]
-Output: 5 Explanation: One shortest transformation sequence is "hit" -> "hot" -> "dot" -> "dog" -> cog ", which is 5 words long.
+///10) Word Ladder.beginWord = "hit", endWord = "cog", wordList = ["hot", "dot", "dog", "lot", "log", "cog"] Output: 5
+/// Explanation: One shortest transformation sequence is "hit" -> "hot" -> "dot" -> "dog" -> cog ", which is 5 words long.
 class Solution {
   int bfs(string src, string des, set < string > & st) {
     queue < pair < string, int > > Q;
@@ -290,8 +291,7 @@ class Solution {
     }
 };
 
-11) Same like Word Ladder, But have to print all possible combination.
-"hit" -> "hot" -> "dot" -> "dog" -> "cog", "hit" -> "hot" -> "lot" -> "log" -> "cog"
+/// 11) Same like Word Ladder, But have to print all possible combination. "hit" -> "hot" -> "dot" -> "dog" -> "cog", "hit" -> "hot" -> "lot" -> "log" -> "cog"
 class Solution {
   map < string, int > Mp, visited;
   map < string, set < string > > adj;
@@ -353,7 +353,7 @@ class Solution {
     }
 };
 
-12) Longest Consecutive Sequence. [100, 4, 200, 1, 3, 2] => 4, seq is[1, 2, 3, 4]
+/// 12) Longest Consecutive Sequence. [100, 4, 200, 1, 3, 2] => 4, seq is[1, 2, 3, 4]
 class Solution {
   public:
     int longestConsecutive(vector < int > & v) {
@@ -373,7 +373,7 @@ class Solution {
       return ans;
     }
 };
-13) Palindrome Partitioning II('I' in 30 days)."aab" => 1, he palindrome partitioning["aa", "b"] could be produced using 1 cut.
+/// 13) Palindrome Partitioning II('I' in 30 days)."aab" => 1, he palindrome partitioning["aa", "b"] could be produced using 1 cut.
 
 class Solution {
   public:
@@ -415,8 +415,8 @@ class Solution {
     }
 };
 
-14) Find Minimum in Rotated Sorted Array I and II
-I(No Duplicate)
+/// 14) Find Minimum in Rotated Sorted Array I and II
+/// I(No Duplicate)
 class Solution {
   int Fun(vector < int > & v) {
     int n = v.size();
@@ -436,7 +436,7 @@ class Solution {
       return Fun(v);
     }
 };
-II(Duplicate)
+///II(Duplicate)
 class Solution {
   public:
     int findMin(vector < int > & nums) {
@@ -455,8 +455,8 @@ class Solution {
     }
 };
 
-15) Word Search I and II
-  (I) board = [["A", "B", "C", "E"],["S", "F", "C", "S"],["A", "D", "E", "E"]], word = "ABCCED"
+/// 15) Word Search I and II
+ /// (I) board = [["A", "B", "C", "E"],["S", "F", "C", "S"],["A", "D", "E", "E"]], word = "ABCCED"
 return true or false
 class Solution {
   int visited[205][205];
@@ -486,7 +486,7 @@ class Solution {
     }
 };
 
-(II) Input: board = [["o", "a", "a", "n"],["e", "t", "a", "e"],["i", "h", "k", "r"],["i", "f", "l", "v"]], words = ["oath", "pea", "eat", "rain"] Output: ["eat", "oath"] return all words on the board.
+/// (II) Input: board = [["o", "a", "a", "n"],["e", "t", "a", "e"],["i", "h", "k", "r"],["i", "f", "l", "v"]], words = ["oath", "pea", "eat", "rain"] Output: ["eat", "oath"] return all words on the board.
 struct node {
   bool endmark;
   node * next[27];
@@ -551,7 +551,7 @@ class Solution {
     }
 };
 
-16) The Skyline Problem, Input: buildings = [[2, 9, 10],[3, 7, 15],[5, 12, 12],[15, 20, 10],[19, 24, 8]
+/// 16) The Skyline Problem, Input: buildings = [[2, 9, 10],[3, 7, 15],[5, 12, 12],[15, 20, 10],[19, 24, 8]
 Output: [[2, 10],[3, 15],[7, 12],[12, 0],[15, 10],[20, 8],[24, 0]]
 bool cmp(pair < pair < int, int > , int > A, pair < pair < int, int > , int > B) {
   if (A.first.first < B.first.first) return true;
@@ -598,7 +598,7 @@ class Solution {
     }
 };
 
-17) Sliding Window Maximum, Each time the sliding window moves right by one position.
+/// 17) Sliding Window Maximum, Each time the sliding window moves right by one position.
 Return the max sliding window.Input: nums = [1, 3, -1, -3, 5, 3, 6, 7], k = 3 Output: [3, 3, 5, 5, 6, 7]
 
 class Solution {
@@ -622,7 +622,7 @@ class Solution {
     }
 };
 
-18) Find Median from Data Stream.#include <ext/pb_ds/assoc_container.hpp>
+/// 18) Find Median from Data Stream.#include <ext/pb_ds/assoc_container.hpp>
 
 #include <ext/pb_ds/tree_policy.hpp>
 
@@ -664,7 +664,7 @@ class MedianFinder {
  * double param_2 = obj->findMedian();
  */
 
-19) Burst Balloons.Input: nums = [3, 1, 5, 8] Output: 167 Explanation: nums = [3, 1, 5, 8]--> [3, 5, 8]--> [3, 8]--> [8]--> [] coins = 3 * 1 * 5 + 3 * 5 * 8 + 1 * 3 * 8 + 1 * 8 * 1 = 167
+/// 19) Burst Balloons.Input: nums = [3, 1, 5, 8] Output: 167 Explanation: nums = [3, 1, 5, 8]--> [3, 5, 8]--> [3, 8]--> [8]--> [] coins = 3 * 1 * 5 + 3 * 5 * 8 + 1 * 3 * 8 + 1 * 8 * 1 = 167
 class Solution {
   public:
     int maxCoins(vector < int > & nums) {
@@ -688,7 +688,7 @@ class Solution {
       return dp[0][n - 1];
     }
 };
-20) Count of Smaller Numbers After Self.Input: nums = [5, 2, 6, 1] Output: [2, 1, 1, 0]#include <ext/pb_ds/assoc_container.hpp>
+/// 20) Count of Smaller Numbers After Self.Input: nums = [5, 2, 6, 1] Output: [2, 1, 1, 0]#include <ext/pb_ds/assoc_container.hpp>
 
 #include <ext/pb_ds/tree_policy.hpp>
 
@@ -709,7 +709,8 @@ class Solution {
       return v;
     }
 };
-21) Longest Increasing Path in a Matrix.Input: matrix = [[9, 9, 4],[6, 6, 8],[2, 1, 1]] Output: 4 Explanation: The longest increasing path is[1, 2, 6, 9].
+
+/// 21) Longest Increasing Path in a Matrix.Input: matrix = [[9, 9, 4],[6, 6, 8],[2, 1, 1]] Output: 4 Explanation: The longest increasing path is[1, 2, 6, 9].
 class Solution {
   int row, col, ans = 1;
   int Fun(vector < vector < int >> & arr, vector < vector < int >> & dp, int i, int j) {
@@ -736,7 +737,8 @@ class Solution {
       return ans;
     }
 };
-22) Reverse Pairs.Given an array nums, we call(i, j) an important reverse pair
+
+/// 22) Reverse Pairs.Given an array nums, we call(i, j) an important reverse pair
 if i < j and nums[i] > 2 * nums[j].Input: [1, 3, 2, 3, 1] Output: 2
 
 #include <ext/pb_ds/assoc_container.hpp>
@@ -760,7 +762,7 @@ class Solution {
       return ans;
     }
 };
-or
+/// or
 class Solution {
   void Merge(vector < int > & v, int low, int mid, int high, int & sum) {
     for (int i = mid + 1; i <= high; i++) {
@@ -797,9 +799,12 @@ class Solution {
       return sum;
     }
 };
-23) Unique Path(I, II, III)
 
-(I) m x n grid, (A robot is located at the top - left corner, The robot can only move either down or right at any point in time.The robot is trying to reach the bottom - right corner of the grid(marked 'Finish' in the diagram below).How many possible unique paths are there ? m = 3, n = 7 => 28 class Solution {
+/// 23) Unique Path(I, II, III)
+
+/// (I) m x n grid, (A robot is located at the top - left corner, The robot can only move either down or right at any point in time.
+/// The robot is trying to reach the bottom - right corner of the grid(marked 'Finish' in the diagram below).How many possible unique paths are there ? m = 3, n = 7 => 28 
+class Solution {
 
     int Fun(int i, int j, int row, int col, vector < vector < int >> & dp) {
       if (i == row || j == col) return 0;
@@ -813,7 +818,7 @@ class Solution {
         return Fun(0, 0, m, n, dp);
       }
   };
-  (II) Input : obstacleGrid = [[0, 0, 0],[0, 1, 0],[0, 0, 0]] Output: 2 
+///  (II) Input : obstacleGrid = [[0, 0, 0],[0, 1, 0],[0, 0, 0]] Output: 2 
 class Solution {
     int row, col;
     int dp[105][105];
@@ -832,7 +837,7 @@ class Solution {
       }
   };
 
-  (III) On a 2 - dimensional grid, there are 4 types of squares: 1, 2, 0, -1, Input: [[1, 0, 0, 0],[0, 0, 0, 0],[0, 0, 2, -1]] Output: 2 
+ /// (III) On a 2 - dimensional grid, there are 4 types of squares: 1, 2, 0, -1, Input: [[1, 0, 0, 0],[0, 0, 0, 0],[0, 0, 2, -1]] Output: 2 
 class Solution {
     int row, col, cnt = 1, ans = 0;
     void Fun(vector < vector < int >> & arr, int i, int j) {
@@ -866,7 +871,8 @@ class Solution {
         return ans;
       }
   }; 
-24) Minimum Insertion Steps to Make a String Palindrome.Input: s = "mbadm"Output: 2 Explanation: String can be "mbdadbm"or "mdbabdm".
+
+/// 24) Minimum Insertion Steps to Make a String Palindrome.Input: s = "mbadm"Output: 2 Explanation: String can be "mbdadbm"or "mdbabdm".
 class Solution {
   public:
     int minInsertions(string s1) {
@@ -887,7 +893,8 @@ class Solution {
       return n - dp[n][n];
     }
 };
-25) Minimum Cost to Cut a Stick.Input: n = 7, cuts = [1, 3, 4, 5] Output: 16
+
+/// 25) Minimum Cost to Cut a Stick.Input: n = 7, cuts = [1, 3, 4, 5] Output: 16
 class Solution {
   int Fun(vector < vector < int > > & dp, vector < int > & v, int left, int right) {
     if (right - left <= 1) return 0;
@@ -909,8 +916,9 @@ class Solution {
       return Fun(dp, v, 0, v.size() - 1);
     }
 };
-26) Best time to buy and Sell Product( I, II, II )
-(I) One transaction, Input: prices = [7,1,5,3,6,4] Output: 5,  Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-1 = 5.
+
+/// 26) Best time to buy and Sell Product( I, II, II )
+/// (I) One transaction, Input: prices = [7,1,5,3,6,4] Output: 5,  Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-1 = 5.
 class Solution {
   public:
     int maxProfit(vector < int > & v) {
@@ -922,7 +930,8 @@ class Solution {
       return ans;
     }
 };
-(II) As many transaction as you can, Input: prices = [7,1,5,3,6,4] Output: 7,  Buy day 2, sell 3 ( 5-1 = 4 ) + Buy day 4, sell 5 ( 6-1 = 3 )
+
+/// (II) As many transaction as you can, Input: prices = [7,1,5,3,6,4] Output: 7,  Buy day 2, sell 3 ( 5-1 = 4 ) + Buy day 4, sell 5 ( 6-1 = 3 )
 class Solution {
   public:
     int maxProfit(vector < int > & v) {
@@ -933,7 +942,8 @@ class Solution {
       return sum;
     }
 };
-(III) at most two transactions.Input: prices = [3,3,5,0,0,3,1,4] Output: 6, Buy day 4, sell 6 ( 3-0 = 3 ) + Buy day 7, sell 8 ( 4-1 = 3 )
+
+/// (III) at most two transactions.Input: prices = [3,3,5,0,0,3,1,4] Output: 6, Buy day 4, sell 6 ( 3-0 = 3 ) + Buy day 7, sell 8 ( 4-1 = 3 )
 class Solution {
   public:
     int maxProfit(vector < int > & prices) {
@@ -948,7 +958,8 @@ class Solution {
       return sell2;
     }
 };
-27) Frog Jump, Input: stones = [0,1,3,5,6,8,12,17] Output: true
+
+/// 27) Frog Jump, Input: stones = [0,1,3,5,6,8,12,17] Output: true
 class Solution {
     bool dp [2005][2005];
 public:
